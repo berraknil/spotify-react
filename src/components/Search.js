@@ -18,25 +18,24 @@ class Search extends React.Component {
 
   handleSubmit(event) {
       event.preventDefault();
-      let query = this.state.query.trim(); // Remove whitespace at the beginning and end.
-      if (!query) { // If no search term was typed, return early and do nothing.
+      let query = this.state.query.trim();
+      if (!query) {
           return;
       }
-      this.props.handleSearch(query); // Execute callback
-      //this.setState({ query: '' });
+      this.props.handleSearch(query);
   }
 
 
 
   render() {
     return (
-      <div>
-        <form className="search-form" onSubmit={this.handleSubmit}>
-              <input className="search-text"
-                       type="text" placeholder="Search for Music"
+         <div>
+            <form className="search-form" onSubmit={this.handleSubmit} role="search">
+               <input className="search-text"
+                       type="text" placeholder="find music"
                        onChange={this.handleInputChange}
                       value={this.state.query}/>
-                    <button className="search-button" type="submit">Search</button>
+                <button className="search-button" type="submit">GO!</button>
             </form>
       </div>);
   }

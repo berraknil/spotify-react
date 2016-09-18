@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
 
-$font1: 'Montserrat', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
 
 
 $green: #1DB954;
@@ -10,20 +10,15 @@ $black: #191414;
 
 
 body {
-  background-color: black;
+  background-color: $black;
   margin: 0;
   padding: 0;
-  font-family: $font1;
+  font-family: $Montserrat;
 }
 
 
-//Flex direction row in media queries HIGH
 .wrapper {
-  //height: 99vh;
-  //width: 90%;
   margin: auto;
-  border: 1px solid $white;
-
 }
 
 
@@ -33,44 +28,41 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
-  //border: 1px solid blue;
 }
 
 .title {
   color: $white;
+  letter-spacing: 3px;
 }
 
 .search-text {
-  //background-color: red;
-  //margin: 1rem;
   font-size: 1.5em;
+  letter-spacing: .1em;
   text-align: center;
-  color: black;
-  placeholder {
-    color: black;
-  }
+  border:2px solid $green;
+
+}
+
+::placeholder {
+  font-family: $Montserrat;
 }
 
 .search-button {
   border-radius: 1rem;
-  margin: 1rem auto;
-
+  margin: 1.5rem auto;
   padding: .2rem;
   font-size: 1.1em;
+  letter-spacing: .1em;
   display: block;
-  width: 85%;
+  width: 25%;
   background: $green;
-  border: 1px solid $green;
-  color: white;
+  border: 1px solid $white;
+  color: $white;
 }
 
 .logo {
   height: 15vh;
-  //border: 1px solid green;
 }
-
-
-/* Header Ends Here*/
 
 
 .content {
@@ -80,30 +72,25 @@ body {
 .list {
   padding: 0;
   margin: 0;
-  //border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: baseline;
   li {
     list-style-type: none;
-    //flex-basis: 45%;
     flex:1;
     margin: auto;
     text-align: center;
     padding-bottom: 2rem;
   }
-  img {
-
-  }
 }
 
 .album-name {
-    padding: 0 1rem;
+  padding: 0 1rem;
   text-align: center;
   color: $white;
   font-weight: 500;
-  font-family: $font1;
+  font-family: $Montserrat;
   height: 2rem;
   line-height: 3rem;
 }
