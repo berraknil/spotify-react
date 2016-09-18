@@ -33,10 +33,10 @@ class Search extends React.Component {
       <div>
         <form className="search-form" onSubmit={this.handleSubmit}>
               <input className="search-text"
-                       type="text" placeholder="Search for Artist"
+                       type="text" placeholder="Search for Music"
                        onChange={this.handleInputChange}
                       value={this.state.query}/>
-                    <button className="search-button" type="button">Search</button>
+                    <button className="search-button" type="submit">Search</button>
             </form>
       </div>);
   }

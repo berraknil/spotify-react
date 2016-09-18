@@ -3,6 +3,12 @@
 
 $font1: 'Montserrat', sans-serif;
 
+
+$green: #1DB954;
+$white: #FFFFFF;
+$black: #191414;
+
+
 body {
   background-color: black;
   margin: 0;
@@ -16,43 +22,59 @@ body {
   //height: 99vh;
   //width: 90%;
   margin: auto;
-  border: 1px solid white;
+  border: 1px solid $white;
 
 }
 
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 2rem;
   //border: 1px solid blue;
 }
 
+.title {
+  color: $white;
+}
+
 .search-text {
   //background-color: red;
-  margin: 1rem;
+  //margin: 1rem;
   font-size: 1.5em;
   text-align: center;
+  color: black;
+  placeholder {
+    color: black;
+  }
 }
 
 .search-button {
   border-radius: 1rem;
-  margin: auto;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+
+  padding: .2rem;
   font-size: 1.1em;
   display: block;
   width: 85%;
-  background: transparent;
+  background: $green;
+  border: 1px solid $green;
   color: white;
 }
 
 .logo {
-  height: 10vh;
+  height: 15vh;
+  //border: 1px solid green;
 }
 
-.content {
-  //border: 1px solid red;
 
+/* Header Ends Here*/
+
+
+.content {
+  padding: 0 1rem;
 }
 
 .list {
@@ -61,21 +83,27 @@ body {
   //border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
-  //align-items:center;
+  justify-content: space-around;
+  align-items: baseline;
   li {
+    list-style-type: none;
     //flex-basis: 45%;
     flex:1;
-    //border: 1px solid blue;
+    margin: auto;
     text-align: center;
-    padding: 1rem;
+    padding-bottom: 2rem;
   }
-  a {
-  color: white;
-  font-family: $font1;
+  img {
+
   }
 }
 
 .album-name {
-  //text-align: center;
-
+    padding: 0 1rem;
+  text-align: center;
+  color: $white;
+  font-weight: 500;
+  font-family: $font1;
+  height: 2rem;
+  line-height: 3rem;
 }

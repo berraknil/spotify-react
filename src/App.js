@@ -31,7 +31,9 @@ class App extends React.Component {
     return (
       <div className="wrapper">
             <header className="header">
+
             <img className="logo" src={logo} alt="Spotify Logo"/>
+              <h1 className="title">Spotify Search</h1>
             <Search handleSearch={this.handleSearch} />
             </header>
 
@@ -40,9 +42,9 @@ class App extends React.Component {
 
                 <ul className="list">{this.state.albums.map(album =>
                     <li key={album.id}>
-                      <h4 className="album-name">
-                        <a href={album.external_urls.spotify}>{album.name}</a></h4>
-                <img src={album.images[1].url} alt={album.name} />
+                      <h3 className="album-name">{album.name}</h3>
+                      <a href={album.external_urls.spotify} target="_blank">
+                        <img src={album.images[1].url} alt={album.name}/></a>
             </li>
            )}
         </ul>

@@ -7,42 +7,64 @@ body {
 
 .wrapper {
   margin: auto;
-  border: 1px solid white; }
+  border: 1px solid #FFFFFF; }
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 2rem; }
 
+.title {
+  color: #FFFFFF; }
+
 .search-text {
-  margin: 1rem;
   font-size: 1.5em;
-  text-align: center; }
+  text-align: center;
+  color: black; }
+  .search-text placeholder {
+    color: black; }
 
 .search-button {
   border-radius: 1rem;
-  margin: auto;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+  padding: .2rem;
   font-size: 1.1em;
   display: block;
   width: 85%;
-  background: transparent;
+  background: #1DB954;
+  border: 1px solid #1DB954;
   color: white; }
 
 .logo {
-  height: 10vh; }
+  height: 15vh; }
+
+/* Header Ends Here*/
+.content {
+  padding: 0 1rem; }
 
 .list {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline; }
   .list li {
+    list-style-type: none;
     flex: 1;
+    margin: auto;
     text-align: center;
-    padding: 1rem; }
-  .list a {
-    color: white;
-    font-family: "Montserrat", sans-serif; }
+    padding-bottom: 2rem; }
+
+.album-name {
+  padding: 0 1rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  height: 2rem;
+  line-height: 3rem; }
 
 /*# sourceMappingURL=App.css.map */
