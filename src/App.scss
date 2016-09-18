@@ -1,0 +1,81 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+
+$font1: 'Montserrat', sans-serif;
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: $font1;
+}
+
+
+//Flex direction row in media queries HIGH
+.wrapper {
+  //height: 99vh;
+  //width: 90%;
+  margin: auto;
+  border: 1px solid white;
+
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  //border: 1px solid blue;
+}
+
+.search-text {
+  //background-color: red;
+  margin: 1rem;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.search-button {
+  border-radius: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+  display: block;
+  width: 85%;
+  background: transparent;
+  color: white;
+}
+
+.logo {
+  height: 10vh;
+}
+
+.content {
+  //border: 1px solid red;
+
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  //border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  //align-items:center;
+  li {
+    //flex-basis: 45%;
+    flex:1;
+    //border: 1px solid blue;
+    text-align: center;
+    padding: 1rem;
+  }
+  a {
+  color: white;
+  font-family: $font1;
+  }
+}
+
+.album-name {
+  //text-align: center;
+
+}

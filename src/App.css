@@ -1,24 +1,48 @@
-.App {
-  text-align: center;
-}
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.wrapper {
+  margin: auto;
+  border: 1px solid white; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem; }
 
-.App-intro {
-  font-size: large;
-}
+.search-text {
+  margin: 1rem;
+  font-size: 1.5em;
+  text-align: center; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.search-button {
+  border-radius: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 1.1em;
+  display: block;
+  width: 85%;
+  background: transparent;
+  color: white; }
+
+.logo {
+  height: 10vh; }
+
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap; }
+  .list li {
+    flex: 1;
+    text-align: center;
+    padding: 1rem; }
+  .list a {
+    color: white;
+    font-family: "Montserrat", sans-serif; }
+
+/*# sourceMappingURL=App.css.map */
