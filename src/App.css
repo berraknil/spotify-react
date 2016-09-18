@@ -14,7 +14,8 @@ body {
 }
 
 .wrapper {
-  margin: auto; }
+  margin: auto;
+}
 
 .header {
   display: flex;
@@ -61,14 +62,16 @@ body {
   margin: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: baseline; }
+  justify-content: space-between;
+  align-items: center;
+}
   .list li {
+    flex-basis: 100%;
     list-style-type: none;
-    flex: 1;
     margin: auto;
     text-align: center;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+  }
 
 .album-name {
   padding: 0 1rem;
@@ -79,3 +82,19 @@ body {
   height: 2rem;
   line-height: 3rem;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .list li {
+      flex-basis: 49%;
+    }
+    .album-name {
+    padding: 0 6rem;
+    }
+  }
+
+  @media only screen and (min-device-width: 1025px) {
+      .list li {
+        flex:1 1 25%;
+      }
+
+    }
