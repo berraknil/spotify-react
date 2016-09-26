@@ -34,7 +34,7 @@ class Search extends React.Component {
                <input className="search-text"
                        type="text" placeholder="find music"
                        onChange={this.handleInputChange}
-                      value={this.state.query}/>
+                      value={this.state.query} autoFocus={focus}/>
                 <button className="search-button" type="submit">GO!</button>
             </form>
       </div>);
